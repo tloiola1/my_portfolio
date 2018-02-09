@@ -1,0 +1,158 @@
+html, body{
+	font-family: GillSans, Calibri, Trebuchet, sans-serif;
+    background: fixed no-repeat url(../images/back1.jpg);
+    background-size: cover;
+}
+.container{
+	width: 90%;
+}
+hr{
+	border: solid grey;
+}
+/*---------------Header-------------------------*/
+/*Seting the navbar opacity*/
+.header{
+	position: absolute;
+	background-color: #616161;
+	height: 100px;
+	width: 100%;
+	left: 0;
+	opacity: .7;
+}
+header{
+	margin: 0;
+	padding: 0;
+}
+/*-------------------- my Logo -----------------*/
+
+.logo{
+	font-family: 'Roboto Mono', monospace;
+	width: inherit;
+	height: inherit;
+	color: #039be5;
+	padding: 0;
+	font-size: 300%;
+	text-shadow: 1px 2px 9px #616161;
+	font-weight: bolder;
+	letter-spacing: -5px;
+}
+div.logo{
+	height: 70px;
+}
+.small-logo{
+	font-size: 30px;
+}
+/* --------------------------------------------- */
+/*---------Menu options top right corner---------*/
+.menu-bar{
+	color: #039be5;
+	font-weight: bolder;
+	float: right;
+	font-size: 25px;
+	display: inline-flex;
+	padding: 0px 0px 15px 0px;
+}
+
+.about, .portfolio, .contact{
+	margin-right: 5px;
+	margin-left: 5px;
+	padding: 10px;
+	padding-top: 20px;
+	height: 50px;
+}
+
+a:hover{
+	text-decoration: none;
+	color: #0091ea;
+}
+
+/*------------------------------------------------*/
+/*--------------Main Content----------------------*/
+.divImage{
+	width: 100%;
+}
+.page-header{
+	color: white;
+	text-shadow: white 0px 0px 2px;
+}
+.my-image{
+	width:200px;
+	border-radius: 50%;
+	border:1px solid #616161;
+	margin-top: 100px;
+}
+/*------------------About Me Section----------------*/
+#about{
+	color: white;
+	font-size: 20px;	
+}
+p{
+	color: white;
+	font-size: 24px;
+	text-shadow: white 0px 0px 2px;
+}
+
+/*--------------------------------------------------*/
+
+/*------------------My Portfolio Section----------------*/
+#portfolio{
+	margin-top: 200px;
+}
+.card{
+	width: 100%;
+    float: left;
+    transition: transform 0.9s;
+    z-index: 1;
+    border: 15px solid rgba(128,128,128,.7);
+    background-clip: padding-box;
+}
+
+.portfolio-img{
+	height: 280px;
+	padding:0;
+	border: 10px solid grey; 
+}
+.portfolio-img:hover{
+	border: 8px solid grey;
+}
+/*--------------------------------------------------*/
+
+/*------------------Contact Me Section----------------*/
+#contact{
+	margin-top: 200px;
+	color: white;
+	font-size: 20px;
+}
+.igf{
+	height: 100px;
+	border-radius: 50%;
+	border: 3px solid transparent;
+}
+.igf:hover{
+	border: .5px;
+}
+/*--------------------------------------------------*/
+
+/*-----------------Footer-------------------------*/
+footer.page-footer{
+	position: fixed;
+	bottom: 0px;
+	width: 100%;
+	padding: 0px;
+	height: 20px;
+	background-color: #039be5 !important;
+	margin-top: 10px;
+}
+.small-footer{
+	font-size: 12px;
+	font-weight: bolder;
+	padding: 0px;
+	color: #424242;
+	float: right;
+}
+.footer{
+	float: right;
+	width: 100%;
+}
+/*------------------------------------------------*/
+
