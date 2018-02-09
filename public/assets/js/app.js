@@ -1,9 +1,37 @@
-const Typed;
-Typed.use(typed.js);
+var test = ['Full Stack Developer, ', 'JavaScript Developer', 'Proficient in Node, ', 'Express, ', 'MongoDB, ', 'and mySQL', 'React is the Front-End Framework I am Currently Working With.', 'And I Love Everything about it!'];
+let i = 0;
+let j = 0;
+$(document).ready(function(){
+    function timeout(i,j){
+        console.log(i, j); 
+        if(i < test.length){
+            setTimeout(() => {
+                $('#typed').append(test[i][j]);
+                if(j < test[i].length)timeout(i, j+1);
+                if(j === test[i].length){
+                    $('#typed').append(' '); i++; j = 0; timeout(i, j);
+                    if(i === 2 || i === 6 || i === 7)$('#typed').append('<p class="remove">');
+                }
+                
+            }, 100);
+        }
+        else{
+            setTimeout(() => {
+                $('#typed').html(function(){
+                    return $(this).children()
+                });
+                $('.remove').remove();
+                i = 0; j = 0;  timeout(i, j);
+                $('#typed').append('');
+            }, 1000);
+        }
 
-var typed = new Typed('.element', {
-    stringsElement: '#typed-strings'
-  });
+    }
+    timeout(i,j);
+});
+
+
+
 
 // ********************************************************************
 $(document).on("submit", ()=>{
